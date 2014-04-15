@@ -116,13 +116,15 @@ h1 small {
 	padding:0 0 0 2px;
 	height:60px;
 	float:left;
-	background:url(../images/menu_split.gif) no-repeat left top;
+	/* background:url(../images/menu_split.gif) no-repeat left top; */
+	background:url(../images/bouton.png) no-repeat left top;
 }
 .menu_nav ul li {
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
-	background:url(../images/menu_split.gif) no-repeat right top;
+	/* background:url(../images/menu_split.gif) no-repeat right top; */
+	background:url(../images/bouton.png) no-repeat right top;
 }
 .menu_nav ul li a {
 	display:block;
