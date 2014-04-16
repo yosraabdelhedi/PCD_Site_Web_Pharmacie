@@ -158,6 +158,12 @@ background:url(../images/bouton.png) no-repeat left top;
 	border-top-right-radius:50px;
 }
 
+.sub {   
+	visibility:hidden;
+}
+.menu li:hover .sub {
+	visibility:visible;
+} 
 
 
 
@@ -212,12 +218,6 @@ background:url(../images/bouton.png) no-repeat left top;
 	text-decoration:none;
 	background:#267900 url(../images/menu_a.gif) repeat-x left top;
 }*/
-.sub {   
-	visibilty:hidden;
-}
-.menu_nav li:hover .sub {
-	visibilty:visible;
-} 
 .content {
 
 	border-bottom:1px solid #c7c7c7;
