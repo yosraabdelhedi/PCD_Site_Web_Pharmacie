@@ -110,9 +110,11 @@ h1 small {
 #container{
 	margin-top:15px;
 	margin-left:60px;
+	
 }
 .menu {
 	list-style:none;
+	
 }
 .menu li{
 	display:block;
@@ -121,27 +123,24 @@ h1 small {
 	float:left;	
 	line-height:50px;
 	text-align:center;
-	font-family:'François One',sans-serif;
+	font-family:'François One',sans-serif; 
+	color:black;
 }
-/*.menu ul {
-	list-style:none;
-	padding:0 0 0 2px;
-	height:60px;
-	float:left;
-	background:url(../images/menu_split.gif) no-repeat left top;
-}*/
+
 .menu ul {
 	list-style:none;
 	padding:0 0 0 2px;
 	height:60px;
 	float:left;
 background:url(../images/bouton.png) no-repeat left top;
+color:black;
 }
 .menu ul li {
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
 	background:url(../images/bouton.png) no-repeat right top;
+	color:black;
 }
 
 
@@ -169,7 +168,13 @@ background:url(../images/bouton.png) no-repeat left top;
 
 
 
-
+/*.menu ul {
+	list-style:none;
+	padding:0 0 0 2px;
+	height:60px;
+	float:left;
+	background:url(../images/menu_split.gif) no-repeat left top;
+}*/
 
 
 
