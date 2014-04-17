@@ -124,7 +124,7 @@ h1 small {
 	line-height:50px;
 	text-align:center;
 	font-family:'François One',sans-serif; 
-	color:black;
+	background:#267900 url(../images/menu_a.gif) repeat-x left top;
 }
 
 .menu ul {
@@ -132,22 +132,17 @@ h1 small {
 	padding:0 0 0 2px;
 	height:60px;
 	float:left;
-background:url(../images/bouton.png) no-repeat left top;
-color:black;
+/*background:url(../images/bouton.png) no-repeat left top;*/
+ackground:#267900 url(../images/menu_a.gif) repeat-x left top;
 }
 .menu ul li {
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
 	background:url(../images/bouton.png) no-repeat right top;
-	color:black;
-}
-
-
-
-
 	
 }
+
 .child {
 	border-bottom-left-radius:50px;
 	border-top-left-radius:50px;
@@ -163,6 +158,9 @@ color:black;
 .menu li:hover .sub {
 	visibility:visible;
 } 
+.sub li {
+	border-top:1px solid  rgba(0,0,0,1);
+}
 
 
 

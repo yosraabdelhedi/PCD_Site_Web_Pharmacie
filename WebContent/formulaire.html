@@ -47,16 +47,39 @@
         <div class="clr"></div>
       </div>
       <div class="clr"></div>
-      <div class="menu_nav">
-        <ul>
-          <li><a href="index.html"><span>Accueil</span></a></li>
-          <li><a href="support.html"><span>Qui sommes nous</span></a></li>
-          <li><a href="about.html"><span>Catalogue</span></a></li>
-          <li><a href="blog.html"><span>Espace partenaires</span></a></li>
+     <!--   <div class="menu_nav">-->
+               <div id="container">
+       
+        <ul class="menu">
+          <li class="child"><a href="index.html"><span>Accueil</span></a></li>
+          <li ><a href="support.html"><span>Qui sommes nous</span></a></li>
+        
+          <li ><a  href="about.html"><span>Catalogue</span></a>
+                <ul class="sub" >
+                    <li>médicament humaine</li>
+                    <li>produits dentaires</li>
+                    <li>produits chimiques</li>
+        </ul>
+        </li>
+         
           
-          <li><a href="contact.html"><span>Contact </span></a></li>
+          <li ><a href="blog.html"><span>Espace partenaires</span></a>
+            <ul class="sub">
+                    <li>fournisseur</li>
+                    <li>client</li>
+                    <li>admin</li>
+        </ul>
+        </li>
+          
+          <li class="child1"><a href="contact.html"><span>Contact </span></a></li>
           
         </ul>
+		  
+        
+        
+        
+        
+        
       </div>
       <div class="clr"></div>
     </div>
@@ -68,18 +91,61 @@
           <h2><span>About to</span> Company Name</h2>
           <div class="clr"></div>
 
-
+<!--  -
 <form Method="GET" >
 produit: <input type=text size=20 product=produit><br><br><br>
  DCI:<input type=text size=20 DCI=DCI><br><br><br>
 <input type=submit value=Rechercher>
 </form>
+-->
+
+<br><br><br><br><br><br><br>
+<table border="0" width="100%">
+            <input type="hidden" name="catprd" value="M" />
+            <tr>
+            	<td nowrap><br />Produit : </td>
+                <td>
+                <br /><input type="text" name="produit" id="produit" />
+                <!--<datalist id="listprd">
+				                    <option value="">
+                                </datalist>-->
+                </td>
+            </tr>
+ <tr>
+            	<td nowrap><br />Laboratoire : </td>
+                <td><br />
+                	<select name="labo" id="labo">
+                    	<option value=""> - Choisir&nbsp;Laboratoire - </option>
+                        <option value="1001">A.BAILLY-CREAT</option><option value="0181">A.P.M JORDANIE (ADVENCED)</option><option value="1002">ABBOTT INTERNATIONAL</option>
+
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td ><br />DCI : </td>
+                <td><br />
+                	<select name="dci" id="dci">
+                    	<option value=""> - Choisir DCI - </option>
+						<option value="AA   6">ACEPROMAZINE</option><option value="AB  17">ACIDE ACETYLSALICYLIQUE (ACETYLSALICYLATE DE CALCIUM UREE)</option>
+
+
+</select>
+</td>
+</tr>
+
+   <tr>            
+            	<td colspan="2><hr /></td>
+           </tr>
+           
+           <tr>  
+            	<td colspan="2" align="center"><input id="rechercher" type="submit" value="Rechercher" class="button" /></td>
+            </tr>
 
 
 
-
-
-
+</table>
 
 
 
@@ -168,6 +234,7 @@ produit: <input type=text size=20 product=produit><br><br><br>
 
 </body>
 </html>
+
 
 
 
