@@ -8,6 +8,9 @@ body {
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 	background:#fff url(../images/main_bg.gif) repeat-x left top;
 }
+
+
+
 html, .main {
 	padding:0;
 	margin:0;
@@ -58,7 +61,7 @@ a {
 h1 {
 	margin:0;
 	padding:28px 0 0;
-	font-size:48px;
+	/*front-size:48px;*/
 	font-weight:normal;
 	line-height:1.2em;
 	text-transform:none;
@@ -71,7 +74,7 @@ h1 span {
 }
 h1 small {
 	display:block;
-	font-size:12px;
+	:12px;
 	line-height:1.2em;
 	letter-spacing:normal;
 	text-transform:uppercase;
@@ -114,32 +117,34 @@ h1 small {
 }
 .menu {
 	list-style:none;
-	
-}
-.menu li{
+	}
+	.menu li{
 	display:block;
 	height:50px;
-	width:125px;
+	width:175px;
 	float:left;	
 	line-height:50px;
 	text-align:center;
 	font-family:'François One',sans-serif; 
 	background:#267900 url(../images/menu_a.gif) repeat-x left top;
+	border-right: 1px solid #000;
+	
 }
 
-.menu ul {
+.menu ul {	
 	list-style:none;
 	padding:0 0 0 2px;
 	height:60px;
 	float:left;
 /*background:url(../images/bouton.png) no-repeat left top;*/
-ackground:#267900 url(../images/menu_a.gif) repeat-x left top;
+background:#267900 url(../images/menu_a.gif) repeat-x left top;
 }
 .menu ul li {
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
 	background:url(../images/bouton.png) no-repeat right top;
+
 	
 }
 
@@ -553,4 +558,95 @@ ol li .send {
 }
 a {
 	outline:none;
+}
+
+
+
+.corp{
+position:absolute;
+top:700px;
+left:400px;
+width:500px;
+height:500px;
+/*background-color:blue;*/
+}
+.entete{
+position:absolute;
+top:0px;
+left:50px;
+width:500px;
+height:50px;
+background-color:blue;
+}
+.Piedpage{
+position:absolute;
+bottom:50px;
+left:50px;
+width:500px;
+height:0px;
+top:1200px;
+/*background-color:orange;*/
+}
+.MenuGauche{
+position:absolute;
+top:820px;
+left:100px;
+width:200px;
+height:300px;
+/*background-color:gray;*/
+}
+
+
+.bouton{
+	color:#343434;
+-moz-box-shadow: 0px 0px 10px #343434;
+-webkit-box-shadow: 0px 0px 10px #343434;
+-o-box-shadow: 0px 0px 10px #343434;
+box-shadow: 0px 0px 10px #343434;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+border: 1px solid #656565;
+background:#cfcfcf;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcfcf", endColorstr="#656565"); /* Pour IE seulement et mode gradient à linear */
+background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#656565));
+background: -webkit-linear-gradient(#cfcfcf, #656565);
+background: -moz-linear-gradient(#cfcfcf, #656565);
+background: -o-linear-gradient(#cfcfcf, #656565);
+background: -ms-linear-gradient(#cfcfcf, #656565);
+background: linear-gradient(#cfcfcf, #656565);
+}
+
+
+.titrerbq
+ {color:#007032;
+ font-family:Impact;
+ font-size:24px;margin:5px 0 15px 0;
+ font-weight:normal;}
+
+
+.taille
+{font-size:17px; 
+color :white;
+
+}
+.taille1
+{font-size:13px;
+color :black;
+ 
+}
+.pro{
+	margin:0px 0 0 0px;
+	color:#68b022;
+	font-family:Impact;
+	font-size:18px;
+	font-weight:normal;
+}
+.taille2
+{font-size:17px; 
+}
+.taille3
+{font-size:13px;
+color :gray;
+ 
 }
