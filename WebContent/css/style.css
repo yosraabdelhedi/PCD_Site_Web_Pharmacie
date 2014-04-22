@@ -118,7 +118,7 @@ h1 small {
 .menu {
 	list-style:none;
 	}
-	.menu li{
+	.menu li{        /*hedha ilmenu principal (ilfou9ani) acceuil|présentation|catalogue...etc*/
 	display:block;
 	height:50px;
 	width:175px;
@@ -131,15 +131,15 @@ h1 small {
 	
 }
 
-.menu ul {	
+/*.menu ul {	/* hedha taw 2iktachaft innou maya3mel chayn*/
 	list-style:none;
 	padding:0 0 0 2px;
 	height:60px;
 	float:left;
 /*background:url(../images/bouton.png) no-repeat left top;*/
-background:#267900 url(../images/menu_a.gif) repeat-x left top;
-}
-.menu ul li {
+/*background:#267900 url(../images/menu_a.gif) repeat-x left top;*/
+}*/
+.menu ul li {   /*hedha menu  déroulant  médicament humaine|produits veterinaire etc.... ou admin|client ect...*/
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
@@ -148,11 +148,11 @@ background:#267900 url(../images/menu_a.gif) repeat-x left top;
 	
 }
 
-.child {
+.child {  /*demi cercle gauche de menu principal*/
 	border-bottom-left-radius:50px;
 	border-top-left-radius:50px;
 }
-.child1 {
+.child1 { /*demi cercle droit de menu principal*/
 	border-bottom-right-radius:50px;
 	border-top-right-radius:50px;
 }
@@ -160,7 +160,7 @@ background:#267900 url(../images/menu_a.gif) repeat-x left top;
 .sub {   
 	visibility:hidden;
 }
-.menu li:hover .sub {
+.menu li:hover .sub {                  /* tout ce qui est "sub" heka ki tinzel 3ala catalogue par exemple "yodhherlik" heka menu médicament humain etc....*/
 	visibility:visible;
 } 
 .sub li {
@@ -562,7 +562,7 @@ a {
 
 
 
-.corp{
+.corp{ /* heki division bech 7atit corps mte3 site illi fi wistou  formulaire ( bech ja formulaire fi centre mte3 page*/
 position:absolute;
 top:700px;
 left:400px;
@@ -570,24 +570,7 @@ width:500px;
 height:500px;
 /*background-color:blue;*/
 }
-.entete{
-position:absolute;
-top:0px;
-left:50px;
-width:500px;
-height:50px;
-background-color:blue;
-}
-.Piedpage{
-position:absolute;
-bottom:50px;
-left:50px;
-width:500px;
-height:0px;
-top:1200px;
-/*background-color:orange;*/
-}
-.MenuGauche{
+.MenuGauche{ /* de méme hekom les familles mte3 les médicament 7attithem à gauche bi division hedhi*/
 position:absolute;
 top:820px;
 left:100px;
@@ -597,7 +580,7 @@ height:300px;
 }
 
 
-.bouton{
+.bouton{   /*hedha bouton rechercher illi 3miltou ena*/
 	color:#343434;
 -moz-box-shadow: 0px 0px 10px #343434;
 -webkit-box-shadow: 0px 0px 10px #343434;
@@ -618,7 +601,7 @@ background: linear-gradient(#cfcfcf, #656565);
 }
 
 
-.titrerbq
+.titrerbq  /* heki mte3 le mot recherche des produits*/
  {color:#007032;
  font-family:Impact;
  font-size:24px;margin:5px 0 15px 0;
@@ -635,7 +618,7 @@ color :white;
 color :black;
  
 }
-.pro{
+.pro{                        /*heki mte3 le mot catalogue illi à gauche*/
 	margin:0px 0 0 0px;
 	color:#68b022;
 	font-family:Impact;
@@ -649,4 +632,4 @@ color :black;
 {font-size:13px;
 color :gray;
  
-}
+}    /* tout ce qui est "taille" hekom taille d'ecriture w couleur mte3ha*/
