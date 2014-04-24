@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 avr. 2014 01:05:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Produit" table="Produit" catalog="BD_PCD">
+        <id name="idProduit" type="java.lang.Integer">
+            <column name="idProduit" />
+            <generator class="identity" />
+        </id>
+        <property name="nomCommercial" type="string">
+            <column name="NomCommercial" length="45" />
+        </property>
+        <property name="dci" type="string">
+            <column name="DCI" length="45" />
+        </property>
+        <property name="famille" type="string">
+            <column name="Famille" length="45" />
+        </property>
+        <property name="prixUnitaire" type="string">
+            <column name="PrixUnitaire" length="16777215" />
+        </property>
+        <property name="qantit&#233;Disp" type="string">
+            <column name="Qantit&#233;Disp" length="16777215" />
+        </property>
+        <property name="datePerim&#233;" type="date">
+            <column name="Date_Perim&#233;" length="10" />
+        </property>
+        <set name="livraisons" table="Livraison" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Produit_idProduit" not-null="true" />
+            </key>
+            <one-to-many class="com.model.Livraison" />
+        </set>
+        <set name="commandes" table="Commande" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Produit_idProduit" not-null="true" />
+            </key>
+            <one-to-many class="com.model.Commande" />
+        </set>
+    </class>
+</hibernate-mapping>
