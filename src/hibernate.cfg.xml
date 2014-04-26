@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
- "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-
-
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
+<<<<<<< HEAD
     <session-factory >
 
 		<!-- local connection properties -->
@@ -25,5 +25,13 @@
 		
 		 <mapping resource="com/test/domain/Participant.hbm.xml" />
 		
+=======
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">BD_PCD</property>
+        <property name="hibernate.connection.url">jdbc:mysql://database.stas-software.com:2201/BD_PCD</property>
+        <property name="hibernate.connection.username">BD_PCD</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+>>>>>>> ea11021fbe094de856188641ac9decd6d0e68348
     </session-factory>
 </hibernate-configuration>
