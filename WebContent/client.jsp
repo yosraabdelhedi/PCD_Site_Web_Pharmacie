@@ -26,124 +26,55 @@
        
       
       
-        <div class="identifier">
-	        
-	          
-	          <div class="clr"></div>
-	        
-	      <form method="post" action="http://www.graphxmondo.net/forum/login.php">
-			<table width="100%" cellpadding="5" cellspacing="3" border="0" class="forumline">
-			<tr> 
-			
-			 </tr>
-			<tr>
-	
-				<th class="row1" ><big>Identifiez-vous pour poursuivre</big>
-				
+       <br><br><br><br><br><br><br>
+<span class="titrerbq">Recherche des produits</span>
 
-			<table border="0" cellspacing="0" cellpadding="5">
-			
-				<tr>
-				<td>
-				</td>
-				</tr>
-				
-				<tr>
-				<td>
-				</td>
-				</tr>
-				
-				<tr>
-					<td class="gensmall">Username: </td>
-					<td><input class="post" type="text" name="username" size="40" maxlength="20" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall">   Password:</td>
-					<td><input class="post" type="password" name="password" size="40" maxlength="20" /></td>
-				</tr>
-				<tr>
-					<td class="gensmall">   Se connecter automatiquement à chaque visite</td>
-					<td><input class="text" type="checkbox" name="autologin"/></td>
-				</tr>
-				<tr>
-					<td align="center" colspan="2" >  <input type="submit" class="mainoption" name="login" value="Valider" /></td>
-				
-				</tr>	
-			
-			</table>	
-			</th>
-			
-			
-			
-			<th class="row1" > <big >Vous êtes nouveau client ?</big>
-			
-			<table border="0" cellspacing="0" cellpadding="5">
-			<tr>
-				<td>
-				</td>
-				</tr>
-				
-				<tr>
-					<td class="gensmall" align="center" >Username: </td>
-					<td><input class="post" type="text"  name="username" size="40" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall"align="center">   Password:</td>
-					<td><input class="post" type="password" name="password" size="40" maxlength="32" /></td>
-				</tr>
-				<tr>
-					<td class="gensmall" align="center">   Validation password:</td>
-					<td><input class="post" type="password" name="password" size="40" maxlength="32" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall"> Nom :</td>
-					<td><input class="post" type="text" name="name" size="40" maxlength="32" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall">  Prénom :</td>
-					<td><input class="post" type="text" name="name" size="40" maxlength="32" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall"> Numéro de téléphone :</td>
-					<td><input class="post" type="text" name="name" size="40" maxlength="32" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall">Email : </td>
-					<td><input class="post" type="text" name="username" size="40" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall">Adresse : </td>
-					<td><input class="post" type="text" name="username" size="40" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall">Société : </td>
-					<td><input class="post" type="text" name="username" size="40" /></td>
-					
-				</tr>
-				<tr>
-					<td class="gensmall"> code postal :</td>
-					<td><input class="post" type="text" name="username" size="40" /></td>
-					
-				</tr>
-				<tr>
-					<td  align="center" colspan="2" >  <input  type="submit"  class="mainoption" name="login" value="Créer un compte" /></td>
-				</tr>
-			</table>	
-			</th>
-			</tr>
-		</table>
-		</form>
-	            
-	
-			</div> 
+<table border="0" width="100%">
+            <input type="hidden" name="catprd" value="M" />
+            <tr>
+            	 <td><br />  <span class="taille2"> produit:</span>  </td>
+                <td>
+                <br /><input type="text" name="produit" id="produit" />
+                 </td>
+            </tr>
+          
+ <tr>
+            	<td nowrap><br />  <span class="taille2">Laboratoire :</span> </td>
+                <td><br />
+                	<select name="labo" id="labo">
+                    	<option value=""> - Choisir&nbsp;Laboratoire - </option>
+                        <option value="1001">A.BAILLY-CREAT</option><option value="0181">A.P.M JORDANIE (ADVENCED)</option><option value="1002">ABBOTT INTERNATIONAL</option>
+
+</select>
+</td>
+</tr>
+
+
+
+<tr>
+<td ><br />  <span class="taille2">DCI :</span> </td>
+                <td><br />
+                	<select name="dci" id="dci">
+                    	<option value=""> - Choisir DCI - </option>
+						<option value="AA   6">ACEPROMAZINE</option><option value="AB  17">ACIDE ACETYLSALICYLIQUE (ACETYLSALICYLATE DE CALCIUM UREE)</option>
+
+
+</select>
+</td>
+</tr>
+ <tr>            
+            	<td colspan="2" align="right"><hr /></td>
+            </tr>
+
+
+           
+           <tr>
+            
+            	<td colspan="2" align="right"><input id="rechercher" type="submit" value="Rechercher" class="bouton" /></td>
+            	
+            </tr>
+
+</table>
 	      
             </section>
       
