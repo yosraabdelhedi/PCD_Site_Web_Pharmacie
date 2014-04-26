@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 avr. 2014 01:05:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.BonDeCommande" table="BonDeCommande" catalog="BD_PCD">
+        <id name="refBonDeCommande" type="java.lang.Integer">
+            <column name="RefBonDeCommande" />
+            <generator class="identity" />
+        </id>
+        <property name="bonCommande" type="binary">
+            <column name="BonCommande" />
+        </property>
+        <set name="commandes" table="Commande" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="RefBonDeCommande" />
+            </key>
+            <one-to-many class="com.model.Commande" />
+        </set>
+    </class>
+</hibernate-mapping>

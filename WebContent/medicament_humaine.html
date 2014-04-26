@@ -10,6 +10,16 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script type="text/javascript"> 
+ 
+function MM_jumpMenuGo(objId,targ,restore){ //v9.0 
+var selObj = null; with (document) { 
+if (getElementById) selObj = getElementById(objId); 
+if (selObj) eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); 
+if (restore) selObj.selectedIndex=0; } 
+} 
+</script> 
+
 </head>
 <body>
    <div class="main">
@@ -69,12 +79,12 @@
 		  </div>
 	
 		  
-		  <br><br><br><br>
+		  <br><br><br><br> </br></br></br></br>
 		   
         <div class="MenuGauche">
         <ul>
 					<span class="pro">Catalogue</span>
-					<br><br>
+					<br><br> </br></br>
 					<li> <a href="medicament_humaine.html" style="text-decoration:none"><span class="taille3">médicament humaine</span></a></li>
                      <li> <a href="produit_veterinaire.html"  style="text-decoration:none"><span class="taille3">produits vétérinaires</span></a></li>
                      <li> <a href="produit_dentaire.html"  style="text-decoration:none"><span class="taille3">produits dentaire</span></a></li>
@@ -86,17 +96,15 @@
 	
  
       
-      <div class="clr"></div>
-  <div class="content"> 
-    <div class="content_resize">
-      <div class="mainbar">
-        <div class="article">
-          <h2><span>About to</span> Company Name</h2>
-          <div class="clr"></div>
+    
           
-<div class="corp">
+ <div class="corp">
 
-<br><br><br><br><br><br><br>
+<<<<<<< HEAD
+<br><br><br><br><br><br><br></br></br></br></br></br></br></br>
+=======
+<br><br><br><br><br>
+>>>>>>> ea11021fbe094de856188641ac9decd6d0e68348
 <span class="titrerbq">Recherche des produits</span>
 
 <table border="0" width="100%">
@@ -107,27 +115,19 @@
                 <br /><input type="text" name="produit" id="produit" />
                  </td>
             </tr>
-          
+            
  <tr>
-            	<td nowrap><br />  <span class="taille2">Laboratoire :</span> </td>
-                <td><br />
-                	<select name="labo" id="labo">
-                    	<option value=""> - Choisir&nbsp;Laboratoire - </option>
-                        <option value="1001">A.BAILLY-CREAT</option><option value="0181">A.P.M JORDANIE (ADVENCED)</option><option value="1002">ABBOTT INTERNATIONAL</option>
-
-</select>
-</td>
-</tr>
-
-
-
-<tr>
 <td ><br />  <span class="taille2">DCI :</span> </td>
                 <td><br />
-                	<select name="dci" id="dci">
+                
+                 <select name="jumpMenu" id="jumpMenu">
+               
                     	<option value=""> - Choisir DCI - </option>
-						<option value="AA   6">ACEPROMAZINE</option><option value="AB  17">ACIDE ACETYLSALICYLIQUE (ACETYLSALICYLATE DE CALCIUM UREE)</option>
-
+                     
+                      
+						<option value="dci1.html">PARACETAMOL</option>
+						
+						<option value="dci2.html">amoxicilline</option>
 
 </select>
 </td>
@@ -140,27 +140,14 @@
            
            <tr>
             
-            	<td colspan="2" align="right"><input id="rechercher" type="submit" value="Rechercher" class="bouton" /></td>
-            	
+            	<td colspan="2" align="right">  <input type="submit"  class="bouton" name="go_button" id= "go_button" value="Rechercher" onclick="MM_jumpMenuGo('jumpMenu','parent',0)" /> 
+            <!--	<input id="rechercher" type="submit" value="Rechercher" class="bouton" /></td>-->
+            </td>	
             </tr>
 
 </table>
-
-</br></br></br></br></br></br></br>
-</div>
-
-
-
-
-
-
-          
-          
-       </div>
-           
-       
-      </div>
-        <div class="col c3">
+      </div>    
+           <div class="col c3">
         <h2><span>Contact</span> Us</h2>
         
         <div class="Piedpage">
@@ -176,6 +163,8 @@
   </div>
   </div>
   </div>  
+</div>
+</div>
 </div>
 </body>
 </html>

@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>STE DE PRODUITS PHARMACEUTIQUE</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
@@ -10,15 +13,9 @@
 <script type="text/javascript" src="js/atooltip.jquery.js"></script>
 <script type="text/javascript" src="js/kwicks-1.5.1.pack.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-
-
-
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<style type="text/css">#ContactForm .bg div, #ContactForm .bg{behavior:url("js/PIE.htc");}</style>
-<![endif]-->
 </head>
+
+
 <body id="page1">
 <div class="body1">
   <div class="body2">
@@ -55,7 +52,7 @@
               </li>
               <li id="page_2">
                 <div class="text">Aproprs</div>
-                 <p class="pad_top1"> <strong>Notre Ã©quipe </strong> </p>
+                 <p class="pad_top1"> <strong>Notre équipe </strong> </p>
                 <div class="cont">
                   <div class="wrapper">
                     <figure class="left marg_right1"><a href="#"><img src="images/po.jpg" alt=""></a></figure>
@@ -70,7 +67,7 @@
                   <div class="wrapper">
                     <figure class="left marg_right1"><a href="#"><img src="images/page2_img3.png" alt=""></a></figure>
                     <p class="pad_top1"> <strong>KHLIF Rania</strong><br>
-                     Commission de rÃ©ception </p>
+                     Commission de réception </p>
                   </div>
                 </div>
               </li>
@@ -81,7 +78,7 @@
                     <article class="cols">
                       <div class="wrapper pad_bot1">
                         <figure class="left marg_right2"> <img src="images/med.jpg" alt=""> </figure>
-                        <p class="pad_top1 pad_bot1"><a href="#" class="link1">MÃ©dicament humaine</a></p>
+                        <p class="pad_top1 pad_bot1"><a href="#" class="link1">Médicament humaine</a></p>
                       
                       </div>
                       <div class="wrapper">
@@ -93,7 +90,7 @@
                     <article class="cols pad_left1">
                       <div class="wrapper pad_bot1">
                         <figure class="left marg_right2"> <img src="images/vete.png" alt=""> </figure>
-                        <p class="pad_top1 pad_bot1"><a href="#" class="link1">Produits vÃ©tÃ©rinaires</a></p>
+                        <p class="pad_top1 pad_bot1"><a href="#" class="link1">Produits vétérinaires</a></p>
                       </div>
                     </article>
                     
@@ -113,7 +110,7 @@
                     <article class="cols">
                       <figure class="pad_bot2 pad_top1"> <a href="#"><img src="images/cl.jpg" alt=""></a> </figure>
                       
-                         <p class="pad_bot1"><a href="identification1.html" class="link1">CLIENT </a></p>
+                         <p class="pad_bot1"><a href="client.jsp" class="link1">CLIENT </a></p>
                       
           </article>
           
@@ -196,5 +193,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
