@@ -1,637 +1,342 @@
-/* Design by http://www.dreamtemplate.com */
-@charset "utf-8";
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+	display:block
+}
+mark, rp, rt, ruby, summary, time {
+	display:inline
+}
+/* Left & Right alignment */
+.left {
+	float:left
+}
+.right {
+	float:right
+}
+.wrapper {
+	width:100%;
+	overflow:hidden
+}
+/* Global properties */
 body {
-	margin:0;
-	padding:0;
-	width:100%;
-	color:#6d6d6d;
-	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	
-background:#fff url(../images/bg_img2.jpg) no-repeat;
+	background:url(../images/bg.jpg) repeat;
+	border:0;
+	font:14px Arial, Helvetica, sans-serif;
+	color:#363636;
+	line-height:20px
 }
 
 
 
-html, .main {
-	padding:0;
-	margin:0;
 }
+.ic, .ic a {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0
+}
+.css3 {
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	position:relative
+}
+/* Global Structure */
 .main {
-	/* background:url(../images/header_bg.jpg) no-repeat center top; */
-}
-.clr {
-	clear:both;
-	padding:0;
-	margin:0;
-	width:100%;
-	font-size:0;
-	line-height:0;
-}
-h2 {
-	margin:8px 0;
-	padding:8px 0;
-	font-size:25px;
-	font-weight:bold;
-	color:#3f3f3f;
-}
-p {
-	margin:8px 0;
-	padding:0 0 8px 0;
-}
-a {
-	color:#3db90d;
-	text-decoration:underline;
-}
-.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
-	margin:0;
-	padding:0;
-}
-.header {
-}
-.header_resize {
 	margin:0 auto;
-	padding:0;
-	width:960px;
+	width:900px
 }
-.logo {
-	padding:0;
-	width:auto;
-	float:left;
-	height:99px;
+body, html {
+	height:100%
+}
+.body1 {
+	background:url(../images/bg_top.jpg) top repeat-x;
+	height:100%;
+	min-height:745px
+}
+.body2 {
+	background:url(../images/bg_img2.jpg) top center no-repeat;
+	height:100%;
+	min-height:745px
+}
+
+/*  main layout  */
+a {
+	color:#558f0b;
+	text-decoration:underline;
+	outline:none
+}
+a:hover {
+	text-decoration:none
 }
 h1 {
-	margin:0;
-	padding:28px 0 0;
-	/*front-size:48px;*/
-	font-weight:normal;
-	line-height:1.2em;
-	text-transform:none;
+	float:left;
+	padding:114px 0 0 63px
 }
-h1 a, h1 a:hover {
-	color:#fff;
-	text-decoration:none;
+p {
+	padding-bottom:20px
 }
-h1 span {
+/*  header  */
+header {
+	height:266px;
+	width:100%;
+	overflow:hidden
 }
-h1 small {
+/* #logo {
 	display:block;
-	:12px;
-	line-height:1.2em;
-	letter-spacing:normal;
-	text-transform:uppercase;
-}
-.slider {
-	padding:0;
-	height:404px;
-}
-.rss {
-	padding:18px 20px 0 0;
-	float:right;
-	width:auto;
-}
-.rss p {
-	margin:0;
-	padding:0;
-	float:right;
-	width:auto;
-	color:#fff;
-	font-size:13px;
-	line-height:1.5em;
-	font-weight:bold;
-}
-.rss a {
-	color:#fff;
-	text-decoration:none;
-}
-.rss a:hover {
-	text-decoration:underline;
-}
-.rss img {
-	margin:-3px 0 -3px 6px;
-	border:none;
-}
-
-#container{
-	margin-top:15px;
-	margin-left:60px;
-	
-}
-.menu {
-	list-style:none;
-	}
-	.menu li{        /*hedha ilmenu principal (ilfou9ani) acceuil|présentation|catalogue...etc*/
-	display:block;
-	height:50px;
-	width:175px;
-	float:left;	
-	line-height:50px;
-	text-align:center;
-	font-family:'François One',sans-serif; 
-	background:#267900 url(../images/menu_a.gif) repeat-x left top;
-	border-right: 1px solid #000;
-	
-}
-
-/*.menu ul {	/* hedha taw 2iktachaft innou maya3mel chayn*/
-	list-style:none;
-	padding:0 0 0 2px;
-	height:60px;
-	float:left;
-/*background:url(../images/bouton.png) no-repeat left top;*/
-/*background:#267900 url(../images/menu_a.gif) repeat-x left top;*/
-}*/
-.menu ul li {   /*hedha menu  déroulant  médicament humaine|produits veterinaire etc.... ou admin|client ect...*/
-	margin:0;
-	padding:0 2px 0 0;
-	float:left;
-	background:url(../images/bouton.png) no-repeat right top;
-
-	
-}
-
-.child {  /*demi cercle gauche de menu principal*/
-	border-bottom-left-radius:50px;
-	border-top-left-radius:50px;
-}
-.child1 { /*demi cercle droit de menu principal*/
-	border-bottom-right-radius:50px;
-	border-top-right-radius:50px;
-}
-
-.sub {   
-	visibility:hidden;
-}
-.menu li:hover .sub {                  /* tout ce qui est "sub" heka ki tinzel 3ala catalogue par exemple "yodhherlik" heka menu médicament humain etc....*/
-	visibility:visible;
-} 
-.sub li {
-	border-top:1px solid  rgba(0,0,0,1);
-}
-
-
-
-
-
-/*.menu ul {
-	list-style:none;
-	padding:0 0 0 2px;
-	height:60px;
-	float:left;
-	background:url(../images/menu_split.gif) no-repeat left top;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.menu_nav {
-	margin:0 auto;
-	padding:0;
-	height:60px;
-}
-.menu_nav ul {
-	list-style:none;
-	padding:0 0 0 2px;
-	height:60px;
-	float:left;
-	background:url(../images/menu_split.gif) no-repeat left top;
-}
-.menu_nav ul li {
-	margin:0;
-	padding:0 2px 0 0;
-	float:left;
-	background:url(../images/menu_split.gif) no-repeat right top;
-}
-.menu_nav ul li a {
-	display:block;
-	margin:0;
-	padding:21px 0;
-	width:189px;
-	font-size:14px;
-	line-height:18px;
-	font-weight:normal;
-	color:#faff89;
-	text-decoration:none;
-	text-transform:uppercase;
-	text-align:center;
-}
-.menu_nav ul li.active a, .menu_nav ul li a:hover {
-	text-decoration:none;
-	background:#267900 url(../images/menu_a.gif) repeat-x left top;
-}*/
-.content {
-
-	border-bottom:1px solid #c7c7c7;
-}
-.content_resize {
-	margin:0 auto;
-	padding:24px 0;
-	width:960px;
-}
-.content .mainbar {
-	margin:0;
-	padding:0;
-	float:left;
-	width:620px;
-}
-.content .mainbar h2 {
-	margin-bottom:0;
-	padding-bottom:0;
-	font-size:30px;
-	line-height:1.2em;
-}
-.content .mainbar div.img {
-}
-.content .mainbar img {
-}
-.content .mainbar img.fl {
-	margin:0;
-	border:none;
-}
-.content .mainbar .article {
-	margin:0 0 20px;
-	padding:0 0 20px;
-	border-bottom:1px solid #e5e5db;
-}
-.content .mainbar .post_content {
-}
-.content .sidebar {
-	padding:0;
-	float:right;
-	width:240px;
-}
-.content .sidebar .gadget {
-	margin:0 0 12px;
-	padding:0 0 24px;
-}
-.content .sidebar h2 {
-	color:#3db90d;
-}
-ul.sb_menu, ul.ex_menu {
-	margin:0;
-	padding:0;
-	list-style:none;
-	color:#959595;
-}
-ul.sb_menu li, ul.ex_menu li {
-	margin:0;
-}
-ul.sb_menu li {
-	padding:4px 0;
-	width:220px;
-}
-ul.ex_menu li {
-	padding:4px 0;
-}
-ul.sb_menu li a {
-	color:#9a9a9a;
-	text-decoration:none;
-	margin-left:-16px;
-	padding:4px 8px 4px 16px;
-}
-ul.ex_menu li a {
-	font-weight:bold;
-	color:#161616;
-	text-decoration:none;
-}
-ul.sb_menu li a:hover, ul.ex_menu li a:hover {
-	color:#3db90d;
-	font-weight:bold;
-	text-decoration:none;
-}
-p.spec {
-	padding:0 0 16px;
-}
-p.infopost {
-	margin-bottom:0;
-	padding:10px 0 10px 12px;
-	color:#fff;
-	background:#f00 url(../images/infopost.gif) repeat-x left top;
-}
-p.infopost a {
-	padding:0 2px;
-	color:#fff;
-	text-decoration:underline;
-}
-p.infopost a.com {
-	display:block;
-	margin:-10px 0;
-	padding:10px 12px;
-	float:right;
-	font-weight:normal;
-	text-decoration:none;
-	color:#faff89;
-	background:url(../images/comm.gif) repeat-x left top;
-}
-p.infopost a.com:hover {
-	text-decoration:underline;
-}
-p.infopost a.com span {
-	padding-left:4px;
-	font-weight:bold;
-}
-a.rm {
-}
-.content p.pages {
-	margin:0;
-	padding:0 0 24px;
-	font-size:11px;
-	color:#929292;
-	text-align:left;
-}
-.content p.pages span, .content p.pages a {
-	padding:8px 12px;
-	text-decoration:none;
-}
-.content p.pages span, .content p.pages a:hover {
-	color:#fff;
-	background:#3db90d;
-	border:1px solid #3db90d;
-}
-.content p.pages a {
-	color:#929292;
-	border:1px solid transparent;
-}
-.content p.pages small {
-	font-size:12px;
-	float:right;
-}
-.content .mainbar .comment {
-	margin:0;
-	padding:16px 0 0 0;
-}
-.content .mainbar .comment img.userpic {
-	border:1px solid #dedede;
-	margin:10px 16px 0 0;
-	padding:0;
-	float:left;
-}
-.fbg {
-	background:#c0d1b9 url(../images/fbg_bg.gif) repeat left top;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;
-}
-.fbg_resize {
-	margin:0 auto;
-	width:960px;
-	padding:24px 0;
-}
-.fbg h2 {
-	color:#fff;
-	padding-bottom:24px;
-}
-.fbg img.gal {
-	margin:0 8px 8px 0;
-	padding:0;
-	background-color:#fff;
-	border:1px solid #dfdfdf;
-}
-.fbg .col {
-	margin:0;
-	float:left;
-}
-.fbg .c1 {
-	padding:0 16px 0 0;
-	width:280px;
-}
-.fbg .c2 {
-	padding:0 36px 0 16px;
-	width:300px;
-}
-.fbg .c3 {
-	padding:0 0 0 16px;
-	width:296px;
-}
-.fbg .c3 a {
-	margin:0;
-	padding:0;
-	text-decoration:underline;
-}
-.fbg .c3 a:hover {
-	color:#3db90d;
-}
-.fbg .fbg_ul {
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.fbg .fbg_ul li {
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.fbg .fbg_ul li a {
-	display:block;
-	margin:0;
-	padding:2px 0 2px 12px;
-	color:#6d6d6d;
-	text-decoration:none;
-	background:url(../images/li.gif) no-repeat left center;
-}
-.fbg .fbg_ul li a:hover {
-	color:#3db90d;
-	text-decoration:underline;
-}
-.fbg p.contact_info {
-	line-height:1.8em;
-}
-.fbg p.contact_info a {
-	color:#3db90d;
-	text-decoration:underline;
-}
-.fbg p.contact_info span {
-	display:block;
-	float:left;
-	width:74px;
-	font-weight:bold;
-	color:#3f3f3f;
-}
-ol {
-	list-style:none;
-}
-ol li {
-	display:block;
-	clear:both;
-}
-ol li label {
-	display:block;
-	margin:0;
-	padding:16px 0 0 0;
-}
-ol li input.text {
-	width:480px;
-	border:1px solid #c0c0c0;
-	margin:0;
-	padding:5px 2px;
-	height:16px;
-	background-color:#fff;
-}
-ol li textarea {
-	width:480px;
-	border:1px solid #c0c0c0;
-	margin:0;
-	padding:2px;
-	background-color:#fff;
-}
-ol li .send {
-	margin:16px 0 0 0;
-}
-.searchform {
-	float:right;
-	padding:0;
-}
-#formsearch {
-	margin:0;
-	padding:36px 0 0;
-	width:auto;
-	height:30px;
-}
-#formsearch span {
-	display:block;
-	margin:0;
-	padding:0;
-	float:left;
-	background:url(../images/search_bg.gif) no-repeat left top;
-}
-#formsearch input.editbox_search {
-	margin:0;
-	padding:8px 6px;
-	float:left;
-	width:170px;
-	font-size:12px;
-	line-height:14px;
-	color:#a8acb2;
-	background:none;
-	outline:none;
-	border:none;
-}
-#formsearch input.button_search {
-	margin:0;
-	padding:0;
-	border:none;
-	float:left;
-}
-.footer {
+	background:url(../images/logo.png) no-repeat;
+	width:319px;
+	height:86px;
+	text-indent:-9999px
+} */
+#menu {
+}
+#menu li {
+}
+#menu li a {
+}
+#menu li a:hover, #menu #menu_active a {
+}
+/*  content  */
+#content {
+	height:372px;
+	width:100%;
+	overflow:hidden;
 	background:#fff;
-	border-top:1px solid #c7c7c7;
+	position:relative
 }
-.footer_resize {
-	margin:0 auto;
-	padding:12px 0;
-	width:960px;
-	line-height:1.5em;
-	color:#6d6d6d;
+
+.ep {
+	background:url(../images/greenc.png) top center no-repeat;
+	
 }
-.footer_resize p {
-	margin:24px 0;
-	padding:0;
-	line-height:normal;
-	white-space:nowrap;
-	text-indent:inherit;
+.cont_top_left, .cont_top_right, .cont_bot_left, .cont_bot_right {
+	display:block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	z-index:11
 }
-.footer_resize a {
-	color:#6d6d6d;
-	font-weight:normal;
+.cont_top_left {
+	top:0;
+	left:0;
+	background:url(../images/content_top_left.gif) top left no-repeat
+}
+.cont_top_right {
+	top:0;
+	right:0;
+	background:url(../images/content_top_right.gif) top right no-repeat
+}
+.cont_bot_left {
+	bottom:0;
+	left:0;
+	background:url(../images/content_bot_left.gif) bottom left no-repeat
+}
+.cont_bot_right {
+	bottom:0;
+	right:0;
+	background:url(../images/content_bot_right.gif) bottom right no-repeat
+}
+.inner {
+	padding:3px;
+	position:relative;
+	z-index:10
+}
+.kwiks_wrap {
+	height:366px
+}
+.kwicks {
+	list-style:none;
 	margin:0;
-	padding:0;
-	border:none;
-	text-decoration:underline;
-	background-color:transparent;
+	overflow:hidden;
+	width:100% !important;
+	height:366px;
+	position:relative
 }
-.footer_resize a:hover {
-	color:#6d6d6d;
-	background-color:transparent;
-	text-decoration:none;
-}
-.footer_resize .lf {
+.kwicks > li {
+	width:176px;
+	height:366px;
 	float:left;
+	overflow:hidden;
+	padding:0;
+	cursor:pointer;
+	background:url(../images/bg_content_right.jpg) top right no-repeat;
+	position:relative;
+	cursor:auto
 }
-.footer_resize .rf {
+.text {
+	float:left;
+	width:60px;
+	height:366px;
+	text-indent:-9999px;
+	cursor:pointer
+}
+#page_1 .text {
+	background:url(../images/page_1.gif) 0 0 no-repeat
+}
+#page_2 .text {
+	background:url(../images/page_2.gif) 0 0 no-repeat
+}
+#page_3 .text {
+	background:url(../images/page_4.gif) 0 0 no-repeat
+}
+#page_4 .text {
+	background:url(../images/page_3.gif) 0 0 no-repeat
+}
+#page_5 .text {
+	background:url(../images/page_5.gif) 0 0 no-repeat
+}
+#page_1.active .text, #page_1:hover .text {
+	background:url(../images/page1_active.gif) 0 0 no-repeat
+}
+#page_2.active .text, #page_2:hover .text {
+	background:url(../images/page2_active.gif) 0 0 no-repeat
+}
+#page_3.active .text, #page_3:hover .text {
+	background:url(../images/page4_active.gif) 0 0 no-repeat
+}
+#page_4.active .text, #page_4:hover .text {
+	background:url(../images/page3_active.gif) 0 0 no-repeat
+}
+#page_5.active .text, #page_5:hover .text {
+	background:url(../images/page5_active.gif) 0 0 no-repeat
+}
+.cont {
+	position:absolute;
+	left:107px;
+	top:32px;
+	width:500px;
+	height:320px;
+	overflow:hidden
+}
+.marg_right1 {
+	margin-right:24px
+}
+.marg_right2 {
+	margin-right:15px
+}
+.pad_top1 {
+	padding-top:5px
+}
+.marg_top1 {
+	margin-top:-5px
+}
+.pad_left1 {
+	padding-left:32px
+}
+.pad_bot1 {
+	padding-bottom:10px
+}
+.pad_bot2 {
+	padding-bottom:22px
+}
+.color1 {
+	color:#558f0b
+}
+.link1 {
+	font-weight:bold;
+	color:#558f0b;
+	text-decoration:none
+}
+.link1:hover {
+	text-decoration:underline
+}
+/*  footer  */
+footer {
+	font-size:12px;
+	color:#fff;
+	text-align:center;
+	padding:0 0 0 0
+}
+footer a {
+	color:#6daf0e
+}
+#icons {
+	padding:28px 0 12px 0;
+	display:inline-block
+}
+* +html #icons {
+	display:inline
+}
+#icons li {
+	float:left;
+	padding-right:2px
+}
+/* Tooltips */
+.aToolTip {
+	border:1px solid #000;
+	background:url(../images/opacity_50_black.png) repeat;
+	color:#fff;
+	margin:0;
+	padding:2px 10px;
+	font-size:11px;
+}
+.aToolTip .aToolTipContent {
+	position:relative;
+	margin:0;
+	padding:0
+}
+/*  forms  */
+#ContactForm {
+	width:488px;
+	padding-top:3px
+}
+#ContactForm .bg {
+	border:1px solid #cccccc;
+	float:left;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px
+}
+#ContactForm .bg div {
+	background:url(../images/bg_input.gif) bottom repeat-x #fff;
+	border:1px solid #fff;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px
+}
+#ContactForm .textarea_box .bg div {
+	background:url(../images/bg_textarea.gif) bottom repeat-x #fff
+}
+#ContactForm span {
+	float:left;
+	width:107px;
+	line-height:24px
+}
+#ContactForm .wrapper {
+	height:30px
+}
+#ContactForm .textarea_box {
+	height:210px;
+	padding-bottom:5px
+}
+#ContactForm a {
 	float:right;
+	margin-left:25px
 }
-a {
-	outline:none;
+#ContactForm .input {
+	width:367px;
+	height:16px;
+	background:none;
+	padding:2px 5px;
+	color:#363636;
+	font:14px Arial, Helvetica, sans-serif
 }
-
-
-
-.corp{ /* heki division bech 7atit corps mte3 site illi fi wistou  formulaire ( bech ja formulaire fi centre mte3 page*/
-position:absolute;
-top:700px;
-left:400px;
-width:500px;
-height:500px;
-/*background-color:blue;*/
+#ContactForm textarea {
+	overflow:auto;
+	margin:0;
+	width:367px;
+	height:150px;
+	background:none;
+	padding:2px 5px;
+	color:#363636;
+	font:14px Arial, Helvetica, sans-serif
 }
-.MenuGauche{ /* de méme hekom les familles mte3 les médicament 7attithem à gauche bi division hedhi*/
-position:absolute;
-top:820px;
-left:100px;
-width:200px;
-height:300px;
-/*background-color:gray;*/
-}
-
-
-.bouton{   /*hedha bouton rechercher illi 3miltou ena*/
-	color:#343434;
--moz-box-shadow: 0px 0px 10px #343434;
--webkit-box-shadow: 0px 0px 10px #343434;
--o-box-shadow: 0px 0px 10px #343434;
-box-shadow: 0px 0px 10px #343434;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
-border: 1px solid #656565;
-background:#cfcfcf;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcfcf", endColorstr="#656565"); /* Pour IE seulement et mode gradient à linear */
-background: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#656565));
-background: -webkit-linear-gradient(#cfcfcf, #656565);
-background: -moz-linear-gradient(#cfcfcf, #656565);
-background: -o-linear-gradient(#cfcfcf, #656565);
-background: -ms-linear-gradient(#cfcfcf, #656565);
-background: linear-gradient(#cfcfcf, #656565);
-}
-
-
-.titrerbq  /* heki mte3 le mot recherche des produits*/
- {color:#007032;
- font-family:Impact;
- font-size:24px;margin:5px 0 15px 0;
- font-weight:normal;}
-
-
-.taille
-{font-size:17px; 
-color :white;
-
-}
-.taille1
-{font-size:13px;
-color :black;
- 
-}
-.pro{                        /*heki mte3 le mot catalogue illi à gauche*/
-	margin:0px 0 0 0px;
-	color:#68b022;
-	font-family:Impact;
-	font-size:18px;
-	font-weight:normal;
-}
-.taille2
-{font-size:17px; 
-}
-.taille3
-{font-size:13px;
-color :gray;
- 
-}    /* tout ce qui est "taille" hekom taille d'ecriture w couleur mte3ha*/
-

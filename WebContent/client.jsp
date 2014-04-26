@@ -1,25 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<title>STE PHARMACIE | Espace Client</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" />
-	
-	
-	
-	</head>
-	
-	
-	<body>
-	
-	<div class="logo">
-	      <!--   <h1><a href="index.html"><span>STE DE PRODUITS PHARMACEUTIQUE</span></a></h1> -->
-	      </div>
-	      
-	
-	        <!--  <h2><span>Mon espace client</span></h2>   -->
-	        
-	        <div class="identifier">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>STE DE PRODUITS PHARMACEUTIQUE</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+</head>
+
+<body id="page1">
+<div class="body1">
+  <div class="body2">
+    <div class="main">
+      <!-- header -->
+      <header>
+        <h1><a href="index.html" id="logo"></a></h1>
+      </header> 
+      <!-- / header -->
+      <!-- content -->
+      <section id="content"> 
+       
+       
+      
+      
+        <div class="identifier">
 	        
 	          
 	          <div class="clr"></div>
@@ -56,7 +63,7 @@
 					<td><input class="post" type="password" name="password" size="40" maxlength="20" /></td>
 				</tr>
 				<tr>
-					<td class="gensmall">   Se connecter automatiquement Ã  chaque visite</td>
+					<td class="gensmall">   Se connecter automatiquement à chaque visite</td>
 					<td><input class="text" type="checkbox" name="autologin"/></td>
 				</tr>
 				<tr>
@@ -69,7 +76,7 @@
 			
 			
 			
-			<th class="row1" > <big >Vous Ãªtes nouveau client ?</big>
+			<th class="row1" > <big >Vous êtes nouveau client ?</big>
 			
 			<table border="0" cellspacing="0" cellpadding="5">
 			<tr>
@@ -97,12 +104,12 @@
 					
 				</tr>
 				<tr>
-					<td class="gensmall">  PrÃ©nom :</td>
+					<td class="gensmall">  Prénom :</td>
 					<td><input class="post" type="text" name="name" size="40" maxlength="32" /></td>
 					
 				</tr>
 				<tr>
-					<td class="gensmall"> NumÃ©ro de tÃ©lÃ©phone :</td>
+					<td class="gensmall"> Numéro de téléphone :</td>
 					<td><input class="post" type="text" name="name" size="40" maxlength="32" /></td>
 					
 				</tr>
@@ -117,7 +124,7 @@
 					
 				</tr>
 				<tr>
-					<td class="gensmall">SociÃ©tÃ© : </td>
+					<td class="gensmall">Société : </td>
 					<td><input class="post" type="text" name="username" size="40" /></td>
 					
 				</tr>
@@ -127,7 +134,7 @@
 					
 				</tr>
 				<tr>
-					<td  align="center" colspan="2" >  <input  type="submit"  class="mainoption" name="login" value="CrÃ©er un compte" /></td>
+					<td  align="center" colspan="2" >  <input  type="submit"  class="mainoption" name="login" value="Créer un compte" /></td>
 				</tr>
 			</table>	
 			</th>
@@ -136,8 +143,29 @@
 		</form>
 	            
 	
-			</div>
+			</div> 
 	      
-	
-	</body>
-	</html> 
+            </section>
+      
+      
+      <!-- / content -->
+      <!-- footer -->
+      <footer>
+        <div class="wrapper">
+          <ul id="icons">
+            <li><a href="#" class="normaltip"><img src="images/icon1.png" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="images/icon4.png" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="images/icon5.png" alt=""></a></li>
+           
+          </ul>
+        </div>
+        Copyright &copy; <a >2014</a> All Rights Reserved<br>
+        </footer>
+      <!-- / footer -->
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

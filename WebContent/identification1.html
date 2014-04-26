@@ -1,25 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<title>STE PHARMACIE | Espace Client</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="css/style1.css" type="text/css" media="screen" />
-	
-	
-	
-	</head>
-	
-	
-	<body>
-	
-	<div class="logo">
-	      <!--   <h1><a href="index.html"><span>STE DE PRODUITS PHARMACEUTIQUE</span></a></h1> -->
-	      </div>
-	      
-	
-	        <!--  <h2><span>Mon espace client</span></h2>   -->
-	        
-	        <div class="identifier">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>STE DE PRODUITS PHARMACEUTIQUE</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+</head>
+<body id="page1">
+<div class="body1">
+  <div class="body2">
+    <div class="main">
+      <!-- header -->
+      <header>
+        <h1><a href="index.html" id="logo"></a></h1>
+      </header> 
+      <!-- / header -->
+      <!-- content -->
+      <section id="content"> 
+       
+       <table border="0" width="100%">
+            <input type="hidden" name="catprd" value="M" />
+            <tr>
+            	<td nowrap><br />Produit : </td>
+                <td>
+                <br /><input type="text" name="produit" id="produit" />
+                <!--<datalist id="listprd">
+				                    <option value="">
+                                </datalist>-->
+                </td>
+            </tr>
+ <tr>
+            	<td nowrap><br />Laboratoire : </td>
+                <td><br />
+                	<select name="labo" id="labo">
+                    	<option value=""> - Choisir&nbsp;Laboratoire - </option>
+                        <option value="1001">A.BAILLY-CREAT</option><option value="0181">A.P.M JORDANIE (ADVENCED)</option><option value="1002">ABBOTT INTERNATIONAL</option>
+
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td ><br />DCI : </td>
+                <td><br />
+                	<select name="dci" id="dci">
+                    	<option value=""> - Choisir DCI - </option>
+						<option value="AA   6">ACEPROMAZINE</option><option value="AB  17">ACIDE ACETYLSALICYLIQUE (ACETYLSALICYLATE DE CALCIUM UREE)</option>
+
+
+</select>
+</td>
+</tr>
+
+   <tr>            
+            	<td colspan="2><hr /></td>
+           </tr>
+           
+           <tr>  
+            	<td colspan="2" align="center"><input id="rechercher" type="submit" value="Rechercher" class="button" /></td>
+            </tr>
+
+
+
+</table>          
+      
+      
+       <!--  <div class="identifier">
 	        
 	          
 	          <div class="clr"></div>
@@ -136,8 +185,28 @@
 		</form>
 	            
 	
-			</div>
+			</div> -->
 	      
-	
-	</body>
-	</html> 
+            </section>
+      
+      
+      <!-- / content -->
+      <!-- footer -->
+      <footer>
+        <div class="wrapper">
+          <ul id="icons">
+            <li><a href="#" class="normaltip"><img src="images/icon1.png" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="images/icon4.png" alt=""></a></li>
+            <li><a href="#" class="normaltip"><img src="images/icon5.png" alt=""></a></li>
+           
+          </ul>
+        </div>
+        Copyright &copy; <a >2014</a> All Rights Reserved<br>
+        </footer>
+      <!-- / footer -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
