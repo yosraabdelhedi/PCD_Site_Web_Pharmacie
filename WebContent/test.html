@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script type="text/javascript"> 
+ 
+function MM_jumpMenuGo(objId,targ,restore){ //v9.0 
+var selObj = null; with (document) { 
+if (getElementById) selObj = getElementById(objId); 
+if (selObj) eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'"); 
+if (restore) selObj.selectedIndex=0; } 
+} 
+</script> 
+
+
+</head>
+<body>
+          <div class="corp">
+
+<span class="titrerbq">Recherche des produits</span>
+
+<table border="0" width="100%">
+            <input type="hidden" name="catprd" value="M" />
+            <!--  <tr>
+            	 <td><br />  <span class="taille2"> produit:</span>  </td>
+                <td>
+                <br /><input type="text" name="produit" id="produit" />
+                 </td>
+            </tr>   -->
+<tr>
+<td ><br />  <span class="taille2">produit :</span> </td>
+                <td><br />
+                
+                 <select name="jumpMenu" id="jumpMenu">
+               
+                    	<option value=""> - Choisir produit - </option>
+                     
+                      
+						<option >FERVEX</option>
+						
+						<option >PANADOL</option>
+						
+												
+						
+
+</select>
+</td>
+</tr>
+            
+            
+            
+<tr>
+<td ><br />  <span class="taille2">DCI :</span> </td>
+                <td><br />
+                
+                 <select name="jumpMenu" id="jumpMenu">
+               
+                    	<option value=""> - Choisir DCI - </option>
+                     
+                      
+						<option value="dci1.html">PARACETAMOL</option>
+						
+						<option value="dci2.html">amoxicilline</option>
+
+</select>
+</td>
+</tr>
+ <tr>            
+            	<td colspan="2" align="right"><hr /></td>
+            </tr>
+
+
+           
+           <tr>
+            
+            	<td colspan="2" align="right">  <input type="submit"  class="bouton" name="go_button" id= "go_button" value="Rechercher" onclick="MM_jumpMenuGo('jumpMenu','parent',0)" /> 
+            	<div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" data-position-to="window">rechercher</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div class="home_box">
+							<span class="med">Panadol</span>
+							<div style="height:50px"></div>
+							<img src="images/panadol.jpg">
+							<div style="height:10px;"></div>
+							Traitement symptomatique des douleurs 
+							d'intensité légère
+						    à modérée et/ou des états fébriles 
+						    chez l'adulte et l'enfant
+						    à partir de 27kg (soit environ 8 ans).
+							<br></br>
+							<span> stock restant: 50</span>
+																					<br></br>
+							<span> Prix: 10 Dt</span>
+							
+							<div style="height:5px"></div>
+				<!--			 <img  src=" http://www.ecommerce-pictures.com/img/11/7/files/image_up/42/6/426big.png"></img> -->
+   <a class="btn_add_cart button purple button_big right" onclick="_gaq.push(['_trackEvent', 'Prospect', 'Fiche_produit', 'Ajouter_Au_Panier']);" data-id="13039" data-refresh="false" data-name="Bi-oil soin pour la peau - 60ml" data-details="60 ml" data-lab="Bi-oil" data-img="images/products/013/039/default.jpg" data-type="parapharmacy_product">
+                        <i class="fa fa-shopping-cart fa-flip-horizontal"> </i> Ajouter au panier                  </a>  
+											
+							
+</div>		
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            <!--	<input id="rechercher" type="submit" value="Rechercher" class="bouton" /></td>-->
+            </td>	
+            </tr>
+
+
+            </table>
+              
+         
+     
+
+
+
+
+
+
+
+  
+      <!-- ici votre formulaire -->
+     <!--   <form>
+          exemple: <input type="text">
+          <select>
+            <option>option1</option>
+            <option>option2</option>
+          </select>
+          <input type="button" value="ok">
+      </form>
+
+-->
+
+
+
+							
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+</body>
+</html>

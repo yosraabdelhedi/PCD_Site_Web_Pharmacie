@@ -7,8 +7,8 @@
     <session-factory >
 
 		<!-- local connection properties -->
-		<!-- <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projet</property> -->
-		<property name="hibernate.connection.url">jdbc:mysql://database.stas-software.com:2201/BD_PCD</property> 
+		<!-- <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>  -->
+		<property name="hibernate.connection.url">jdbc:mysql://database.stas-software.com:2201/BD_PCD</property>  
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.username">BD_PCD</property>
 		<property name="hibernate.connection.password">BD_PCD</property>
