@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 avr. 2014 01:05:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Livraison" table="Livraison" catalog="BD_PCD">
+        <composite-id name="id" class="com.model.LivraisonId">
+            <key-property name="produitIdProduit" type="int">
+                <column name="Produit_idProduit" />
+            </key-property>
+            <key-property name="fournisseurIdFournisseur" type="int">
+                <column name="Fournisseur_idFournisseur" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="bonDeLivraison" class="com.model.BonDeLivraison" fetch="select">
+            <column name="RefBonLivraison" />
+        </many-to-one>
+        <many-to-one name="fournisseur" class="com.model.Fournisseur" update="false" insert="false" fetch="select">
+            <column name="Fournisseur_idFournisseur" not-null="true" />
+        </many-to-one>
+        <many-to-one name="produit" class="com.model.Produit" update="false" insert="false" fetch="select">
+            <column name="Produit_idProduit" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

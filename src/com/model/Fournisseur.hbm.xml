@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 avr. 2014 01:05:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Fournisseur" table="Fournisseur" catalog="BD_PCD">
+        <id name="idFournisseur" type="java.lang.Integer">
+            <column name="idFournisseur" />
+            <generator class="identity" />
+        </id>
+        <property name="nom" type="string">
+            <column name="Nom" length="45" />
+        </property>
+        <property name="pr&#233;nom" type="string">
+            <column name="Pr&#233;nom" length="45" />
+        </property>
+        <property name="num&#233;roT&#233;l&#233;phone" type="string">
+            <column name="`Num&#233;ro t&#233;l&#233;phone`" length="16777215" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="Adresse" />
+        </property>
+        <property name="ville" type="string">
+            <column name="Ville" length="45" />
+        </property>
+        <property name="login" type="string">
+            <column name="Login" length="45" />
+        </property>
+        <property name="passWord" type="string">
+            <column name="PassWord" length="16777215" />
+        </property>
+        <set name="livraisons" table="Livraison" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Fournisseur_idFournisseur" not-null="true" />
+            </key>
+            <one-to-many class="com.model.Livraison" />
+        </set>
+    </class>
+</hibernate-mapping>
